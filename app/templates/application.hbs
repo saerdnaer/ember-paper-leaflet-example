@@ -1,3 +1,19 @@
-<h2 id="title">Welcome to Ember.js</h2>
 
-{{outlet}}
+  {{#paper-toolbar flex-layout="column" flex=true}}
+    <div class="md-toolbar-tools">
+    <!--
+      {{#md-button class="md-icon-button"}}
+        {{md-icon md-svg-icon="images/icons/menu.svg"}}
+      {{/md-button}} -->
+        <h2>TUM MI building <small class=".md-caption"> (2.0-alpha1)</small></h2>
+        
+        <span flex></span>
+        {{#paper-button classNames="md-icon-button"}}
+          {{paper-icon icon="more-vert"}}
+        {{/paper-button}}
+    </div>
+  {{/paper-toolbar}}
+  
+  {{#paper-content flex-layout="column" flex=true}}
+    {{outlet}}
+  {{/paper-content}}

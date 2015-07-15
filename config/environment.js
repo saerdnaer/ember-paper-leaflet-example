@@ -12,7 +12,7 @@ module.exports = function(environment) {
       'script-src': "'self'",
       'font-src': "'self' https://fonts.gstatic.com",
       'connect-src': "'self'",
-      'img-src': "'self' data: *.tile.osm.org heta2.saerdnaer.de ds2os-web",
+      'img-src': "'self' data: *.tile.osm.org heta3.saerdnaer.de ds2os-web",
       'style-src': "'self' 'unsafe-inline'",
       'media-src': "'self'"
     },
