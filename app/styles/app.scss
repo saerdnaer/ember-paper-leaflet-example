@@ -1,0 +1,45 @@
+
+html {
+  /* http://stackoverflow.com/questions/12046315/prevent-overscrolling-of-web-page */
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  overflow: auto;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body, .ember-app {
+  height: 100%;
+  width: 100%;
+}
+
+/* Workaround for layout="column" on main div for iOS Safari */
+.ember-app {
+  display: flex; 
+  flex-direction: column;
+}
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+
+.leaflet-popup-content {
+  width:300px !important;
+}
+
+.leaflet-grid-label .lng {
+    margin-left: 8px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+@import 'ember-paper';
