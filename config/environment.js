@@ -4,8 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'ember-paper-leaflet-example',
     environment: environment,
-    baseURL: '/',
-    locationType: 'auto',
+    baseURL: '/ember-paper-leaflet-example',
+    locationType: 'hash',
 
     contentSecurityPolicy: {
       'default-src': "'none'",
